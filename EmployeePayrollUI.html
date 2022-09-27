@@ -10,6 +10,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
+    <script>
+        //change the range slider value          
+        document.addEventListener("change", function(){
+            let rangeValue = document.getElementById("salary");
+            document.getElementById("salaryOutput").value = rangeValue.value;
+        });
+        
+    </script>
+
 </head>
 <body>
 
@@ -91,7 +100,7 @@
             <div class="row-content">
                 <label for="salary" class="label text">Choose your salary: </label>
                 <input type="range" name="salary" id="salary" class="input" min="300000" max="5000000" value="400000">
-                <output class="salary-output text" for="salary">400000</output>
+                <output class="salary-output text" for="salary" id="salaryOutput">400000</output>
             </div>
 
             <div class="row-content">
