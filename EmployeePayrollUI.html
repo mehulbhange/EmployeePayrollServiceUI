@@ -28,7 +28,7 @@
 
     <div class="form-content">
 
-        <form class="form" action="">
+        <form class="form" action="" onsubmit="save()">
 
             <div class="form-head">
                 Employee Payroll Form
@@ -73,7 +73,7 @@
             </div>
 
             <div class="row-content">
-                <label for="department" class="label text">Department</label>
+                <label for="department" name="department" class="label text">Department</label>
                 <div>
                     <input type="checkbox" class="checkbox" name="hr" id="hr" value="HR">
                     <label for="hr" class="text">HR</label>   
@@ -131,25 +131,25 @@
                         <option value="31">31</option>
                     </select>
                     <select name="month" id="month">
-                        <option value="Jan">January</option>
-                        <option value="Feb">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="Aug">August</option>
-                        <option value="Sept">September</option>
-                        <option value="Oct">October</option>
-                        <option value="Nov">November</option>
-                        <option value="Dec">December</option>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
                     </select>
                     <select name="year" id="year">
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
                     </select>
                 </div>
             </div>
@@ -170,6 +170,8 @@
         </form>
 
     </div>
+
+    <script src="./EmployeePayroll.js"></script>
 
     <script>
         //change the range slider value
